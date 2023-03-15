@@ -22,8 +22,8 @@ Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
 ## Program:
-### Developed By:
-### Register Number: 
+### Developed By:R.Vijay
+### Register Number: 212221230121
 i) # To Read,display the image
 ```
 import cv2
