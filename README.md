@@ -23,33 +23,48 @@ End the program and close the output image windows.
 ### Register Number: 
 i) #To Read,display the image
 ```
-  
+import cv2
+color_image = cv2.imread('lion.jpeg',1)
+cv2.imshow('vijay-212221230121',color_image)
+cv2.waitKey(0) 
+cv2.destroyAllWindows
 
 ```
 ii) #To write the image
 ```
-
-
-
+import cv2
+color_image = cv2.imread('lion.jpeg',1)
+cv2.imwrite('lion.png',color_image)
+cv2.waitKey(0)
 ```
 iii) #Find the shape of the Image
-```python3
-
-
+```
+import cv2
+img=cv2.imread('lion.jpeg',-1)
+print(img.shape)
 
 ```
 iv) #To access rows and columns
 
-```python3
-
-
-
+```
+import cv2
+img=cv2.imread('lion.jpeg',-1)
+for i in range(100,150):
+    for j in range(10,255):
+        img[i][j]=[255,100,255] #blue green red
+cv2.imshow('212221230121-R.Vijay',img);
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 ```
 v) #To cut and paste portion of image
-```python3
-
-
-
+```
+import cv2
+img1=cv2.imread('lion.jpeg',-1)
+copied_portion=img1[10:60,10:120]
+img1[110:160,110:220]=copied_portion
+cv2.imshow('212221230121',img1)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 ```
 
 ## Output:
